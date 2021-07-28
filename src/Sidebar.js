@@ -7,6 +7,7 @@ const Header = styled.header`
     display: block;
     /* padding: 20px; */
     color: white;
+    background-color: #252830;
     .logo{
         padding: 20px;
         margin: 2vh auto;

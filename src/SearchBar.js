@@ -5,14 +5,15 @@ import styled from 'styled-components';
 const Container = styled.div`
     width:100%;
     display: flex;
-    height: 10vh;
+    /* height: 10vh; */
     margin-top: 1vh;
     padding: 1vh;
+    overflow-x: hidden;
     .searchBox{
         align-self: center;
         display: flex;
         height: 8vh;
-        flex-basis: 92%;
+        /* flex-basis: 92%; */
         width: 100%;
         background-color: #252830;
         border-radius: 4px;
@@ -51,11 +52,11 @@ const Container = styled.div`
         margin-left: 15px;
         margin-right: 15px;
         border-radius: 4px;
+        height: 8vh;
     }
 
     .search_bar_block{
-        display: block;
-        width: 100%;
+        flex-basis: 92%;
         ul{
             display: flex;
             list-style: none;
