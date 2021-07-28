@@ -72,7 +72,9 @@ const Header = styled.header`
             height: 3px;
         }
     }
-
+    @media only screen and (max-width:850px){
+        display: none;
+    }
 `;
 
 
