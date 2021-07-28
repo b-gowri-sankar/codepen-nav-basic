@@ -91,7 +91,7 @@ const Container = styled.div`
 const SearchBar = () => {
 
     const [styleSetting, setStyleSettting] = React.useState({
-        opacity: 0
+        Display: 'none'
     })
 
     return (
@@ -100,10 +100,10 @@ const SearchBar = () => {
                 <div className='searchBox'>
                     <img src='./images/search.svg' alt='search icon' />
                     <form>
-                        <input type='text' placeholder='Search CodePen...' onFocus={()=> setStyleSettting({...styleSetting, opacity:1}) }/>
+                        <input type='text' placeholder='Search CodePen...' onFocus={()=> setStyleSettting({...styleSetting, Display:'flex'}) }/>
                     </form>
                 </div>
-                <ul style={{opacity:styleSetting.opacity}}>
+                <ul style={{display:styleSetting.Display}}>
                     <li><img src='./images/profile.svg' alt='profile-icon' className='ul-image'/><span>Your Work</span></li>
                     <li><img src='./images/pen.svg' alt='profile-icon' className='ul-image'/><span>Pens</span></li>
                     <li><img src='./images/projects.svg' alt='profile-icon' className='ul-image'/><span>Projects</span></li>

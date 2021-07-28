@@ -2,17 +2,20 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Header = styled.header`
-    width: 188px;
-    height: 100vh;
-    display: block;
-    /* padding: 20px; */
+    width: 250px;
     color: white;
     background-color: #252830;
     .logo{
         padding: 20px;
-        margin: 2vh auto;
+        margin: 1vh auto;
+        height: 10vh;
+        width: 100%;
+        background-color: #252830;
     }
-    p{
+    .DisplayCard{
+        display: block;
+        height: 87vh;
+        p{
         color: #aaaebc;
         padding: 3px 20px;
         &::after{
@@ -73,16 +76,20 @@ const Header = styled.header`
             height: 3px;
         }
     }
-    @media only screen and (max-width:850px){
-        display: none;
     }
+    
 `;
 
 
+
 const Sidebar = () => {
+
+
     return (
-        <Header>
-            <img src='./images/logo.svg' alt='logo' className='logo'/>
+        <>
+        <Header>  
+            <img src='./images/logo.svg' alt='logo' className='logo' />
+            <div className='DisplayCard' >
             <p>Create</p>
             <ul className='create list-1'>
                 <li><img src='./images/pen.svg' alt='profile-icon' className='ul-image'/><span>Pens</span></li>
@@ -105,7 +112,9 @@ const Sidebar = () => {
             </ul>
             <span className='line-3'></span>
             <h5>CodePen <img src='./images/PRO.svg' alt=' pro subscription'/></h5>
+            </div>
         </Header>
+    </>
     )
 }
 

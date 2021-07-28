@@ -7,6 +7,7 @@ const Container = styled.div`
   display: flex;
   background-color: #131417;
   color: #717790;
+  height: 100vh;
 `;
 
 
