@@ -5,6 +5,8 @@ import SearchBar from './SearchBar';
 
 const Container = styled.div`
   display: flex;
+  background-color: #131417;
+  color: #717790;
 `;
 
 
