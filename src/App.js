@@ -1,10 +1,19 @@
 import './App.css';
 import styled from 'styled-components';
+import Sidebar from './Sidebar';
+import SearchBar from './SearchBar';
+
+const Container = styled.div`
+  display: flex;
+`;
 
 
 function App() {
   return (
-    <div>h1</div>
+    <Container>
+      <Sidebar />
+      <SearchBar />
+    </Container>
   )
   
 }
